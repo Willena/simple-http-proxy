@@ -20,4 +20,4 @@ frontend http-in
   use_backend remote if is_websocket
 
 backend remote
-  server remoteserv ${UPSTREAM}
+  server remoteserv ${UPSTREAM} ${SSL_LINE}
